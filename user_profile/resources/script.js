@@ -44,11 +44,14 @@ $(document).ready(() => {
         xhttp.onreadystatechange = () => {
             xhttp.onreadystatechange = () => {
                 if (xhttp.readyState == 4) {
-                    if (xhttp.status == 200) alert('failed to register user');
-                    if (xhttp.responseURL != this.location) {
-                        location = xhttp.responseURL;
+                    if (xhttp.status == 201) {
+                        alert('registered successfully');
+                        if (xhttp.responseURL != this.location) {
+                            location = xhttp.responseURL;
+                        }
                     }
-                    
+                    else
+                    alert('failed to register user');
                 }
             }
         };

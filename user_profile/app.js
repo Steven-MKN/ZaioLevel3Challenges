@@ -29,7 +29,7 @@ app.get('/favicon.ico', (req, res) => {
 
 app.get(['/login', '/'], (request, response) => {
     console.log('get: ', request.url, request.ip);
-    response.status(200);
+    response.status(201);
     response.render('login');
 });
 app.post('/login', (request, response) => {
