@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manage Profile</title>
+    <link rel="stylesheet" href="../resources/styles.css">
+</head>
+<body>
+    <form id="form-profile">
+        
+        <table>
+                <h2 id="student_num"><%= query.student_num %></h2>
+            <tr>
+                <td>
+                    <h6>Name</h6>
+                </td>
+                <td><input type="text" id="name" value="<%= query.name %>"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>Surname</h6>
+                </td>
+                <td><input type="text" id="surname" value="<%= query.surname %>" > </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>Age</h6>
+                </td>
+                <td><input type="number" id="age" value="<%= query.age %>" > </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>Degree</h6>
+                </td>
+                <td><input type="text" id="degree"  value="<%= query.degree %>"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>Favourite Course</h6>
+                </td>
+                <td><input type="text" id="fav_course" value="<%= query.fav_course %>"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" id="logout-button">Logout</button>
+                    <button type="button" id="save-button">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="../resources/jquery-3.4.1.js"></script>
+    <script src="../resources/script.js"></script>
+</body>
+</html>
