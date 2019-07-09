@@ -43,6 +43,8 @@ exports.updateProfile = (body = {}, callback) => {
             console.log(result);
             if (result && result.nModified == 1){
                 status = 201;
+            } else if (result && result.n == 1){
+                status = 201;
             }
             callback(status);
         });
