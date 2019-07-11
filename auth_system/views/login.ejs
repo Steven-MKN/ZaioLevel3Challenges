@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="../resources/styles.css">
+</head>
+<body>
+    <form action="/login" method="POST">
+        <input name="username" class="field" type="text" placeholder="username" required><br>
+        <input name="password" class="field" type="password" placeholder="password" required><br>
+        <a href="/register">register</a><input name="login-btn" type="submit" class="button">
+    </form>
+    <% 
+    let msg = '';
+    if (typeof body != 'undefined') {
+        if (body.notify == 1) msg = 'You have successfully logged in';
+        else if (body.notify == 0) msg = 'The username and password do not match';
+    }
+    if (msg != '') { %>
+        <script> alert("<%= msg %>");</script>
+    <%}
+    %>
+</body>
+</html>
