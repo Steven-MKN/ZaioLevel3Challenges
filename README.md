@@ -42,6 +42,6 @@ During these challenges, here's what I learned:
 -How to use packages and the package.json file,
 -How to use express to route and serve webpages,
 -How to validate a form before submission,
--How to use different http methods (get, delete, post, put), and
--How to insert and query MongoDB.
-
+-How to use different http methods (get, delete, post, put), 
+-How to insert and query MongoDB, and
+-Although the purpose of this challenges was to test server side skills, I put a tiny bit of effort in styling the pages, that also imporved my css skills.
