@@ -1,0 +1,29 @@
+{
+  "name": "auth_using_arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Steven-MKN/ZaioLevel3Challenges"
+  },
+  "keywords": [
+    "challenges",
+    "zaio",
+    "node",
+    "js",
+    "form",
+    "auth",
+    "authentication"
+  ],
+  "author": "Steven",
+  "license": "ISC"
+}

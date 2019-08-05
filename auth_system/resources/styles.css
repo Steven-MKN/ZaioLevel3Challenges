@@ -1,0 +1,32 @@
+body {
+    background: teal;
+    display: flex;
+}
+
+form {
+    text-align: center;
+    background: midnightblue;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+input {
+    margin: 5px;
+    height: 20px;
+    text-align: center;
+    font-family: comic;
+    font-size: 16px;
+}
+
+.field { width: 200px; border-radius: 22px; }
+.button { width: 100px; background: white;}
+
+
+
+a {
+    color: white;
+}
